@@ -6,15 +6,15 @@
                 <form action="/submit-contact-form" method="POST">
                     <div class="form-group">
                         <label>Your Name</label>
-                        <input type="text" name="name" class="form-control" required/>
+                        <input type="text" name="name" class="form-control" required="required"/>
                     </div>
                     <div class="form-group">
                         <label>Your Email</label>
-                        <input type="email" name="email" class="form-control" required/>
+                        <input type="email" name="email" class="form-control" required="required"/>
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea name="message" class="form-control" required></textarea>
+                        <textarea name="message" class="form-control" required="required"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary mt-3">Send Message</button>
                 </form>
