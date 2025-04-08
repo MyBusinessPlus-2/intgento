@@ -1,12 +1,11 @@
 <odoo>
     <record id="action_forms_custom" model="ir.actions.server">
-        <field name="name">📨 Ejecutar Acción de Forms</field> <!-- Este nombre aparece en el menú -->
-        <field name="model_id" ref="model_undetermines_form"/> <!-- CAMBIA esto por el modelo real -->
+        <field name="name">📨 Ejecutar Acción de Forms</field>
+        <field name="model_id" ref="model_undetermines_form"/>
         <field name="state">code</field>
-        <field name="binding_model_id" ref="model_undetermines_form"/> <!-- también aquí -->
-        <field name="binding_view_types">form</field> <!-- Solo vista formulario -->
+        <field name="binding_model_id" ref="model_undetermines_form"/>
+        <field name="binding_view_types">form</field>
         <field name="code">
-            # Tu lógica aquí. Ejemplo: marcar como revisado
             record.message_post(body="Acción ejecutada desde el botón de Forms 🚀")
         </field>
     </record>
