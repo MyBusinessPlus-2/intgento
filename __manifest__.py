@@ -1,5 +1,5 @@
 {
-    'name': 'Form Action on Website',
+    'name': 'Form Action on Website 2',
     'version': '1.0',
     'summary': 'Trigger custom actions when a form is submitted',
     'category': 'Website',
