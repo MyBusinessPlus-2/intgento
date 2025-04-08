@@ -1,3 +1,19 @@
 <odoo>
-    <menuitem id="menu_form_action_website_root" name="Contacto Web" sequence="10" />
+    <!-- Menú principal -->
+    <menuitem id="menu_form_action_root" name="Formulario Web" sequence="10"/>
+
+    <!-- Acción que abre un formulario o vista (dummy en este ejemplo) -->
+    <record id="action_form_action_dummy" model="ir.actions.act_window">
+        <field name="name">Formulario Web</field>
+        <field name="res_model">mail.mail</field> <!-- Puedes cambiar esto por otro modelo -->
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+    </record>
+
+    <!-- Submenú que ejecuta la acción -->
+    <menuitem id="menu_form_action_dummy"
+              name="Mensajes Enviados"
+              parent="menu_form_action_root"
+              action="action_form_action_dummy"
+              sequence="20"/>
 </odoo>
