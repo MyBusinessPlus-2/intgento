@@ -5,8 +5,9 @@
     'category': 'Website',
     'depends': ['website', 'mail'],  # mail = if you want to send emails
     'data': [
-    'views/contact_form_template.xml',
-    'views/menu.xml',  # <== nuevo archivo
+        'views/contact_form_template.xml',
+        'views/menu.xml',  # <== nuevo archivo
+        'views/forms_action.xml',
     ],
     'installable': True,
     'application': True,
