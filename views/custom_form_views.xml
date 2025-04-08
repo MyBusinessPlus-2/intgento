@@ -1,0 +1,10 @@
+<record id="view_custom_form_tree" model="ir.ui.view">
+    <field name="name">custom.form.tree</field>
+    <field name="model">custom.form</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="email"/>
+        </tree>
+    </field>
+</record>
