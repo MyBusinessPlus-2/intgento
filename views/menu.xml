@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="menu_form_action_website_root" name="Contacto Web" sequence="10" />
+</odoo>
