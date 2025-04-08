@@ -6,7 +6,8 @@
         <field name="binding_model_id" ref="model_undetermines_form"/>
         <field name="binding_view_types">form</field>
         <field name="code">
-            record.message_post(body=&quot;Acción ejecutada desde el botón de Forms&quot;)
+if record:
+    record.message_post(body="Acción ejecutada desde el botón de Forms")
         </field>
     </record>
 </odoo>
