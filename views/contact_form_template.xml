@@ -1,0 +1,24 @@
+<odoo>
+    <template id="contact_form_template" name="Contact Form Page">
+        <t t-call="website.layout">
+            <div class="container">
+                <h2 class="mt-4 mb-3">📬 Contact Us</h2>
+                <form action="/submit-contact-form" method="POST">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="email" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+                </form>
+            </div>
+        </t>
+    </template>
+</odoo>
